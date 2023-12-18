@@ -10,7 +10,7 @@ import styles from './InfiniteGallery.module.css';
 
 const NO_DATA_MESSAGE = 'К сожалению, поиск не дал результатов';
 const ERROR_MESSAGE =
-  'К сожалению при загрузке жанных произошла ошибка';
+  'К сожалению при загрузке данных произошла ошибка';
 
 interface InfiniteGalleryProps {
   search?: string;
