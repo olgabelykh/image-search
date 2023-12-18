@@ -3,7 +3,7 @@ import pick from 'lodash/pick';
 import { ImagesData, ErrorData, SearchParams } from '../../types';
 
 const BASE_URL = 'https://api.unsplash.com/search/photos';
-const ACCESS_KEY = process.env.UNSPLASH_ACCESS_KEY;
+const ACCESS_KEY = 'OBvv8GpEiToO4-May6x-pyyKvLI6017DpcNo675YGm4';
 const INITIAL_SEARCH_PARAMS: SearchParams = {
   query: '',
   page: '1',
