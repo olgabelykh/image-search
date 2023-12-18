@@ -1,6 +1,7 @@
 'use client';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
+import cn from 'classnames';
 import { useAsync } from '../../../hooks/useAsync';
 import { fetchImagesData } from '../../actions';
 import { Gallery } from '../Gallery';
@@ -88,7 +89,11 @@ function InfiniteGallery({
         !isLoading && (
           <p className={styles.message}>{NO_DATA_MESSAGE}</p>
         )}
-      {!!search && !!error && ERROR_MESSAGE}
+      {!!search && !!error && (
+        <p className={cn(styles.message, styles.error)}>
+          {ERROR_MESSAGE}
+        </p>
+      )}
     </div>
   );
 }
