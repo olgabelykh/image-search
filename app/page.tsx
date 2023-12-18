@@ -27,7 +27,7 @@ export default async function Home({
               search={search}
             />
           )}
-          {error}
+          <p className={styles.message}>{error}</p>
         </div>
       </main>
       <Script src={POLYFILL_URL} />
