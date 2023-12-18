@@ -1,6 +1,7 @@
 interface ImageData {
   id: string;
   src: string;
+  srcThumb: string;
   width: number;
   height: number;
   alt: string;

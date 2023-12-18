@@ -34,12 +34,12 @@ async function getImagesData(
 
     if (response.ok) {
       const responseJSON = await response.json();
-
       return {
         results: responseJSON.results?.map(
           (item: { urls: { [x: string]: any } }) => ({
             ...pick(item, ['id', 'width', 'height', 'alt']),
             src: item.urls['regular'],
+            srcThumb: item.urls['thumb'],
           })
         ),
         ...pick(responseJSON, ['total', 'total_pages']),

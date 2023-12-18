@@ -29,7 +29,7 @@ function Gallery({ images }: GalleryProps) {
               className={cn(styles.media, styles.item)}
             >
               <Image
-                src={image.src}
+                src={image.srcThumb}
                 width={image.width}
                 height={image.height}
                 alt={image.alt}
