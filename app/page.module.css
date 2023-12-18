@@ -15,3 +15,8 @@
   width: 100%;
   padding-block-start: clamp(16px, 2.74vw, 39.56px);
 }
+
+.message {
+  color: var(--message-text-color, hsl(0, 0%, 47%));
+  font-size: 16px;
+}
