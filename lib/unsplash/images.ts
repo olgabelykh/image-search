@@ -1,6 +1,6 @@
 import { URLSearchParams } from 'node:url';
 import pick from 'lodash/pick';
-import { ImagesData, ErrorData, SearchParams } from '../../../types';
+import { ImagesData, ErrorData, SearchParams } from '../../types';
 
 const BASE_URL = 'https://api.unsplash.com/search/photos';
 const ACCESS_KEY = 'OBvv8GpEiToO4-May6x-pyyKvLI6017DpcNo675YGm4';
