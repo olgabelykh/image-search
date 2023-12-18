@@ -1,0 +1,19 @@
+.search {
+  background-color: var(--bg-color, hsl(0, 0%, 100%));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 340px;
+  max-width: 100%;
+  padding-block: 40px 16px;
+  position: sticky;
+  transition: all 350ms ease;
+  top: 0;
+  width: auto;
+  z-index: 1;
+}
+
+.searchActive {
+  height: 104px;
+  width: 100%;
+}

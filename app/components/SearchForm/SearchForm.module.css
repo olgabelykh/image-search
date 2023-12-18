@@ -1,0 +1,13 @@
+.form {
+  display: flex;
+  font-size: 16px;
+  gap: 8px;
+  height: 48px;
+  max-width: 100%;
+  width: 510px;
+}
+
+.submit {
+  flex-grow: 0;
+  flex-shrink: 0;
+}

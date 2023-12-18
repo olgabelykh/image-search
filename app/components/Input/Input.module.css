@@ -1,0 +1,54 @@
+.inputWrapper {
+  --bg-color: hsl(0, 0%, 93%);
+  --text-color: hsl(0, 0%, 0%);
+  align-items: center;
+  background-color: var(--bg-color);
+  border-radius: 12px;
+  color: var(--text-color);
+  display: flex;
+  font-size: inherit;
+  gap: 4px;
+  height: 100%;
+  padding-inline: 8px;
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+  height: 100%;
+  width: 100%;
+  cursor: grab;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.inputIcon {
+  background-color: transparent;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.erase {
+  align-items: center;
+  border: none;
+  display: flex;
+  justify-items: center;
+  width: 24px;
+}
+
+.erase:hover {
+  opacity: 0.75;
+  outline: none;
+}
+
+.erase:disabled {
+  background-color: transparent;
+  cursor: not-allowed;
+  opacity: 0.5;
+}

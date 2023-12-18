@@ -1,0 +1,20 @@
+.button {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
+
+.button:hover {
+  opacity: 0.75;
+  outline: none;
+}
+
+.button:disabled {
+  background-color: transparent;
+  cursor: not-allowed;
+  opacity: 0.5;
+}

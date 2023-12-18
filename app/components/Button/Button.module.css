@@ -1,0 +1,21 @@
+.button {
+  border: none;
+  border-radius: 12px;
+  cursor: grab;
+  font-family: inherit;
+  font-size: inherit;
+  height: 100%;
+  outline: none;
+  padding-inline: 16px;
+  transition: background-color 350ms ease;
+}
+
+.buttonPrimary {
+  background-color: var(--primary-bg-color, hsl(0, 90%, 48%));
+  color: var(--primary-text-color, hsl(0, 0%, 100%));
+}
+
+.buttonPrimary:hover {
+  background-color: var(--primary-bg-hover-color, hsl(0, 100%, 38%));
+  transition: background-color 350ms ease;
+}

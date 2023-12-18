@@ -1,0 +1,67 @@
+.modal {
+  background-color: hsla(0, 0%, 0%, 0.5);
+  border: none;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: all 550ms ease;
+  width: 100%;
+  z-index: 2;
+}
+
+.modal[open] {
+  opacity: 1;
+  transition: all 550ms ease;
+}
+
+.inner {
+  align-items: center;
+  container-type: size;
+  container-name: modal-container;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.close {
+  height: 32px;
+  position: absolute;
+  right: 28px;
+  top: 28px;
+  width: 32px;
+}
+
+.modalContent {
+  --size: calc(100% - 80px);
+  aspect-ratio: 1 / 1;
+  height: var(--size);
+}
+
+@media (max-width: 390px) {
+  .modalContent {
+    align-self: flex-start;
+    --size: 100%;
+  }
+}
+
+@container modal-container (min-aspect-ratio: 1 / 1) {
+  .modalContent {
+    aspect-ratio: 1 / 1;
+    height: var(--size);
+    width: auto;
+  }
+}
+
+@container modal-container (max-aspect-ratio: 1 / 1) {
+  .modalContent {
+    aspect-ratio: 1 / 1;
+    height: auto;
+    width: var(--size);
+  }
+}
