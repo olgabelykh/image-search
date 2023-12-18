@@ -39,7 +39,7 @@ async function getImagesData(
           (item: { urls: { [x: string]: any } }) => ({
             ...pick(item, ['id', 'width', 'height', 'alt']),
             src: item.urls['regular'],
-            srcThumb: item.urls['thumb'],
+            srcThumb: item.urls['small'],
           })
         ),
         ...pick(responseJSON, ['total', 'total_pages']),
